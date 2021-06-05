@@ -1,2 +1,3 @@
 this is file2.
 it is changed at local repository.
+and the matter of conglict was resolved
