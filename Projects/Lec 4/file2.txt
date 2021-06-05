@@ -1,3 +1,5 @@
 this is file2.
 it is changed at local repository.
 It is at new branch.
+branch merged.
+branch deleted.
