@@ -23,11 +23,17 @@ public class MainActivity extends AppCompatActivity {
 
         button1 = findViewById(R.id.btnadd);
         button2 = findViewById(R.id.btnView);
+        editAge = findViewById(R.id.editNumber);
+        editName = findViewById(R.id.editName);
+        aSwitch = findViewById(R.id.switch1);
 
         button1.setOnClickListener(new View.OnClickListener() {
+            CustomerModel customerModel;
             @Override
             public void onClick(View v) {
-                Toast.makeText(MainActivity.this, "Add Button Clicked", Toast.LENGTH_SHORT).show();
+               // Toast.makeText(MainActivity.this, "Add Button Clicked", Toast.LENGTH_SHORT).show();
+                customerModel = new CustomerModel(editName.getText().toString(), Integer.parseInt(editAge.getText().toString()), aSwitch.isChecked(), 1);
+                Toast.makeText(MainActivity.this, customerModel.toString(), Toast.LENGTH_LONG);
             }
         });
 
