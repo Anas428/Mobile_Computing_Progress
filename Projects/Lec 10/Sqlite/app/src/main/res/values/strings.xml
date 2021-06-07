@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">Sqlite</string>
-    <string name="Name">StudentName</string>
-    <string name="Age">StudentAge</string>
+    <string name="Name">Please Enter your Name</string>
+    <string name="Age">Please Enter your Age</string>
+    <string name="ButtonName">Add</string>
+    <string name="ButtonView">View Records</string>
 </resources>
