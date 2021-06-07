@@ -39,5 +39,8 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Negative Button is Clicked", Toast.LENGTH_LONG);
             }
         });
+
+        AlertDialog alertDialog = builder.create();
+        alertDialog.show();
     }
 }
