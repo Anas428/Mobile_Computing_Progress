@@ -1,5 +1,6 @@
 package com.example.dialog;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
@@ -19,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void ShowDialog(View view)
     {
-
+        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
+        builder.setMessage("This is the message for my Dialog");
     }
 }
