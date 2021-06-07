@@ -18,12 +18,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         ListView listView = findViewById(R.id.myListView);
-        String [] friends = {"Taskeen","Hina", "Honey","Anas", "Anas ki jaan"};
+        String [] friends = {"Item1","Item2", "Item3","Item4", "Item5"};
         ArrayList<String> friendsList = new ArrayList<String>();
-        friendsList.add("Hina Meri jaan");
-        friendsList.add("Taskeen Meri jaan ");
-        friendsList.add("Meri jan Taskeen");
-        friendsList.add("Anas");
+        friendsList.add("Array List item 1");
+        friendsList.add("Array List item 2");
+        friendsList.add("Array List item 3");
+        friendsList.add("Array List item 4");
+        friendsList.add("Array List item 5");
+        friendsList.add("Array List item 6");
 
         ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, friends);
         listView.setAdapter(arrayAdapter);
