@@ -3,7 +3,9 @@ package com.example.lists;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ListView;
 
 import java.lang.reflect.Array;
@@ -12,14 +14,18 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
+    ArrayAdapter<String> arrayAdapter;
+    ArrayList<String> friendsList;
+    EditText editText = findViewById(R.id.editText);
+    ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ListView listView = findViewById(R.id.myListView);
+        listView = findViewById(R.id.myListView);
         String [] friends = {"Item1","Item2", "Item3","Item4", "Item5"};
-        ArrayList<String> friendsList = new ArrayList<String>();
+        friendsList = new ArrayList<String>();
         friendsList.add("Array List item 1");
         friendsList.add("Array List item 2");
         friendsList.add("Array List item 3");
@@ -27,8 +33,14 @@ public class MainActivity extends AppCompatActivity {
         friendsList.add("Array List item 5");
         friendsList.add("Array List item 6");
 
-        ArrayAdapter<String> arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, friendsList);
+        arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, friendsList);
         listView.setAdapter(arrayAdapter);
 
+    }
+
+    public void addFriend(View view)
+    {
+        friendsList.add(editText.getText().toString());
+        listView.setAdapter(arrayAdapter);
     }
 }
