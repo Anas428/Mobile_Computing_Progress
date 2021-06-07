@@ -1,5 +1,6 @@
 package com.example.activitylifecycle;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -46,12 +47,24 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onSaveInstanceState(@NonNull Bundle outState) {
+        super.onSaveInstanceState(outState);
+        outState.putInt("value", count);
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         textView = findViewById(R.id.textView2);
         button = findViewById(R.id.button);
+
+        if(savedInstanceState != null)
+        {
+            count = savedInstanceState.getInt("value");
+            textView.setText(String.valueOf(count));
+        }
     }
 
     public void IncreaseNumber(View view) {
