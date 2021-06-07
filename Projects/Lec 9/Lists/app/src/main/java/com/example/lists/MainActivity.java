@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     ArrayAdapter<String> arrayAdapter;
     ArrayList<String> friendsList;
-    EditText editText = findViewById(R.id.editText);
+    EditText editText;
     ListView listView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +24,12 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         listView = findViewById(R.id.myListView);
+        editText = findViewById(R.id.editText);
+
         String [] friends = {"Item1","Item2", "Item3","Item4", "Item5"};
         friendsList = new ArrayList<String>();
         friendsList.add("Array List item 1");
         friendsList.add("Array List item 2");
-        friendsList.add("Array List item 3");
-        friendsList.add("Array List item 4");
-        friendsList.add("Array List item 5");
-        friendsList.add("Array List item 6");
 
         arrayAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, friendsList);
         listView.setAdapter(arrayAdapter);
@@ -41,6 +39,5 @@ public class MainActivity extends AppCompatActivity {
     public void addFriend(View view)
     {
         friendsList.add(editText.getText().toString());
-        listView.setAdapter(arrayAdapter);
     }
 }
