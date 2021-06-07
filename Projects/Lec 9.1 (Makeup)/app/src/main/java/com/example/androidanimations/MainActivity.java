@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -15,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void Animation(View view)
     {
-        
+        ImageView imageView = findViewById(R.id.imageView2);
+        imageView.animate().alpha(0);
     }
 }
