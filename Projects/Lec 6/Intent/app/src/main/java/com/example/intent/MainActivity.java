@@ -31,6 +31,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void BatteryLow(View view)
     {
-
+        Intent intent = new Intent(Intent.ACTION_BATTERY_LOW);
+        startActivity(intent);
     }
 }
