@@ -21,15 +21,9 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onStop() {
-        super.onStop();
-        Log.d("ALC", "OnStop Called");
-    }
-
-    @Override
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d("ALC", "OnDestroy Called");
+    protected void onResume() {
+        super.onResume();
+        Log.d("ALC", "OnResume Called");
     }
 
     @Override
@@ -39,9 +33,15 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        Log.d("ALC", "OnResume Called");
+    protected void onStop() {
+        super.onStop();
+        Log.d("ALC", "OnStop Called");
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        Log.d("ALC", "OnDestroy Called");
     }
 
     @Override
