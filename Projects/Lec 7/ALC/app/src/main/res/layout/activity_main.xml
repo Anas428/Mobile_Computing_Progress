@@ -54,5 +54,31 @@
             android:text="Click me to add"
             android:onClick="IncreaseNumber"
             />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/b2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Activity 2"
+            android:onClick="GotoActivity2"
+            />
+
+        <Button
+            android:id="@+id/b3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Go to Activity 3"
+            android:onClick="GotoActivity3"
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

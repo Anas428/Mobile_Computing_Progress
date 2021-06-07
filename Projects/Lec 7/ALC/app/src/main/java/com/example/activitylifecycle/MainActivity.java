@@ -2,6 +2,7 @@ package com.example.activitylifecycle;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -57,5 +58,13 @@ public class MainActivity extends AppCompatActivity {
         count = Integer.parseInt(textView.getText().toString());
         count++;
         textView.setText(String.valueOf(count));
+    }
+
+    public void GotoActivity2(View view)
+    {
+        Intent intent = new Intent(this, MainActivity2.class);
+    }
+
+    public void GotoActivity3(View view) {
     }
 }
