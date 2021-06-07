@@ -31,6 +31,7 @@
         android:layout_marginEnd="152dp"
         android:layout_marginRight="152dp"
         android:text="Go to Activity 1"
+        android:onClick="GotoActivity1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.586"
         app:layout_constraintStart_toStartOf="parent"
@@ -46,6 +47,7 @@
         android:layout_marginEnd="121dp"
         android:layout_marginRight="121dp"
         android:text="Go to Activity 2"
+        android:onClick="GotoActivity2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button2" />

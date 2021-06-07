@@ -63,8 +63,12 @@ public class MainActivity extends AppCompatActivity {
     public void GotoActivity2(View view)
     {
         Intent intent = new Intent(this, MainActivity2.class);
+        startActivity(intent);
     }
 
-    public void GotoActivity3(View view) {
+    public void GotoActivity3(View view)
+    {
+        Intent intent = new Intent(this, MainActivity3.class);
+        startActivity(intent);
     }
 }
