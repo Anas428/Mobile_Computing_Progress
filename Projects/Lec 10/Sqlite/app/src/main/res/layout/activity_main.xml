@@ -7,7 +7,7 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/editName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -23,7 +23,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <EditText
-        android:id="@+id/editTextNumber"
+        android:id="@+id/editNumber"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -37,7 +37,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/editName" />
 
     <Switch
         android:id="@+id/switch1"
@@ -51,10 +51,10 @@
         android:text="Switch"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editNumber" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btnadd"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="20dp"
@@ -62,10 +62,10 @@
         android:layout_marginTop="71dp"
         android:text="@string/ButtonName"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintTop_toBottomOf="@+id/editNumber" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btnView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="187dp"
@@ -76,8 +76,8 @@
         android:text="@string/ButtonView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toEndOf="@+id/button"
-        app:layout_constraintTop_toBottomOf="@+id/editTextNumber" />
+        app:layout_constraintStart_toEndOf="@+id/btnadd"
+        app:layout_constraintTop_toBottomOf="@+id/editNumber" />
 
     <ListView
         android:layout_width="349dp"
@@ -89,5 +89,5 @@
         android:layout_marginRight="31dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/btnadd" />
 </androidx.constraintlayout.widget.ConstraintLayout>
