@@ -28,10 +28,4 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(Intent.ACTION_VIEW, uri);
         startActivity(intent);
     }
-
-    public void BatteryLow(View view)
-    {
-        Intent intent = new Intent(Intent.ACTION_BATTERY_LOW);
-        startActivity(intent);
-    }
 }
