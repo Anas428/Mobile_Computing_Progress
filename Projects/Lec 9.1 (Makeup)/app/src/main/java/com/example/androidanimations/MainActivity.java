@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
         //imageView.animate().alpha(0).setDuration(2000);
         //imageView.animate().translationYBy(5000).setDuration(2000);
 
-        imageView.animate().rotation(1000).setDuration(2000).alpha(0);
+        //imageView.animate().rotation(1000).setDuration(2000).alpha(0);
+
+        imageView.animate().scaleX(0.5f).scaleY(0.5f).setDuration(2000);
     }
 }
